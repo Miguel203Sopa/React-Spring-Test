@@ -11,8 +11,15 @@ CREATE TABLE [dbo].[PRODUCT](
 	[NAME] [varchar](50) NOT NULL,
 	[PRICE] [decimal](10, 2) NOT NULL,
 	[CREATED_AT] [date] NOT NULL,
-	[UPDATED_AT] [date] NOT NULL,
+	[UPDATED_AT] [date] NULL,
 );
+
+--Insert de test
+INSERT INTO [PRODUCT] VALUES ('Metal Box',25.50,'2025-05-06',NULL);
+INSERT INTO [PRODUCT] VALUES ('Water Bottle',1.00,'2026-09-01',NULL);
+INSERT INTO [PRODUCT] VALUES ('Screwdriver',4.50,'2023-01-02',NULL);
+
+
 
 --Primeros 100 registros
 SELECT * FROM [dbo].[PRODUCT] 
