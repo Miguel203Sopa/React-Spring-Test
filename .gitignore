@@ -1,14 +1,35 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Compilados
+*.class
+
+# IDE
+.idea/
+*.iml
+
+# Logs
+*.log
+*.log.*
+
+# Archivos del sistema
+.DS_Store
+
+# Entorno
+.env
+
+# Archivos empaquetados
+*.jar
+*.war
+*.ear
+*.zip
 *.tar
 *.tar.*
-*.jar
+*.tgz
 *.exe
 *.msi
 *.deb
-*.zip
-*.tgz
-*.log
-*.log.*
-*.sig
 
-pkg/
-src/
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.properties
