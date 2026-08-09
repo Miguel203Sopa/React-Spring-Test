@@ -1,0 +1,20 @@
+CREATE DATABASE TEST
+GO
+
+USE TEST
+GO
+
+--Tabla Producto
+
+CREATE TABLE [dbo].[PRODUCT](
+	[ID] [bigint] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[NAME] [varchar](50) NOT NULL,
+	[PRICE] [decimal](10, 2) NOT NULL,
+	[CREATED_AT] [date] NOT NULL,
+	[UPDATED_AT] [date] NOT NULL,
+);
+
+--Primeros 100 registros
+SELECT * FROM [dbo].[PRODUCT] 
+WHERE ID < 100 
+ORDER BY ID DESC
